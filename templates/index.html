@@ -56,12 +56,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="bi-file-earmark" aria-hidden="true"></i> Currículo</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="#portifolio"
               ><i class="bi-collection" aria-hidden="true"></i> Portifólio</a
             >
           </li>
@@ -283,6 +278,83 @@
           </div>
         </div>
       </section>
+
+      <section class="mt-5" id="portifolio">
+        <div class="container pb-5 pt-5">
+
+          <h2 class="pb-4">Portifólio</h2>
+
+          <div id="carouselPortifolio" class="carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="carouselPortifolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="../static/img/projetoAPI.png" class="card-img-top" alt="Projeto API REST">
+                      <div class="card-body">
+                        <h5 class="card-title">Projeto API REST</h5>
+                        <p class="card-text">Início de um projeto, criando uma API REST com implante na AWS c. Spring Boot framework Swagger JWT JUnit 5 Mockito Docker React JS.</p>
+                        <div class="d-flex justify-content-center">
+                          <a href="https://github.com/Dominggues/Portifolio-Responsivo-Bootstrap-Flask" target="_blank" class="btn btn-outline-dark me-3">
+                            <i class="bi bi-github"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="../static/img/petLife.png" class="card-img-top" alt="PetLife">
+                      <div class="card-body">
+                        <h5 class="card-title">PetLife</h5>
+                        <p class="card-text">Site não online apenas para uma demonstração de como estilizadamente seria um site voltado a uma Clínica Veterinária. Feito apenas com HTML, CSS e JavaScript.</p>
+                        <div class="d-flex justify-content-center">
+                          <a href="https://github.com/Dominggues/Estudos-HTML-CSS" target="_blank" class="btn btn-outline-dark me-3">
+                            <i class="bi bi-github"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col">
+                    <div class="card">
+                      <img src="../static/img/aulaDePOO.png" class="card-img-top" alt="Aula de POO">
+                      <div class="card-body">
+                        <h5 class="card-title">Projeto simples de Banco de Dados</h5>
+                        <p class="card-text">Exemplo simples de como usar de forma eficiênte e prática o Sqlite caso queira adicionar um cliente em seu banco de dados.</p>
+                        <div class="d-flex justify-content-center">
+                          <a href="https://github.com/Dominggues/Banco-Aula-de-POO  " target="_blank" class="btn btn-outline-dark me-3">
+                            <i class="bi bi-github"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
