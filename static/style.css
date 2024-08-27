@@ -129,7 +129,7 @@ section#inicio div#arraste a {
 .menu-mobile {
     position: fixed;
     color: #fff;
-    background-color: transparent;
+    background-color:#032450eb;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
@@ -169,4 +169,22 @@ section#inicio div#arraste a {
     #main{
         margin-left: 0 ;
     }
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #032c61;
+}
+
+.section-bg {
+    background-color: #eff5ff;
 }
