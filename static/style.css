@@ -93,7 +93,7 @@ html, body{
 }
 
 section#inicio {
-    background-image: url("./img/setup.jpg");
+    background-image: url("./img/backgroundImg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -129,7 +129,7 @@ section#inicio div#arraste a {
 .menu-mobile {
     position: fixed;
     color: #fff;
-    background-color:#032450eb;
+    background: color #2c281e;;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
