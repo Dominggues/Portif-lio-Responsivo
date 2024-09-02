@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
-from config import email,senha
+from config import email, senha
 
 app = Flask(__name__)
 app.secret_key = "GuiDomingues"
@@ -19,8 +19,8 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome,
-        self.email = email,
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
         
 
@@ -39,21 +39,24 @@ def send():
         )
 
         msg = Message(
-            subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
-            sender = app.config.ger("MAIL_USERNAME"),
-            recipients = ['guilhermedomingues024@gmail.com', app.config.ger("MAIL_USERNAME")],
-            body = f'''
-
-            {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte
-            mensagem:
+            subject=f'{formContato.nome} te enviou uma mensagem no portfólio',
+            sender=app.config.get("MAIL_USERNAME"),
+            recipients=['guilhermedomingues024@gmail.com', app.config.get("MAIL_USERNAME")],
+            body=f'''
+            {formContato.nome} com o e-mail {formContato.email} te enviou a seguinte mensagem:
 
             {formContato.mensagem}
-            
             '''
         )
-        mail.send(msg)
-        flash('Mensagem enviada com sucesso!')
+
+        try:
+            mail.send(msg)
+            flash('Mensagem enviada com sucesso!')
+        except Exception as e:
+            print(f"Erro ao enviar e-mail: {e}")
+            flash('Erro ao enviar a mensagem. Tente novamente mais tarde.')
+    
     return redirect('/')
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(debug=True)

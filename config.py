@@ -1,2 +1,2 @@
-email = 'guilhermedomingues024@gmail.com'
-senha = 'Guipenido988367311!'
+email = 'dominguesguilherme541@gmail.com'
+senha = 'duqj dhhc bajx arxo'
